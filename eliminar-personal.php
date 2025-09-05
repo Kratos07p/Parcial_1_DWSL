@@ -8,8 +8,8 @@ if (!isset($_GET['id'])) {
 
 $id = $_GET['id'];
 $sql_foto = "SELECT fotografia FROM personal WHERE id = $id";
-$result_foto = mysqli_query($con, $sql_foto);
-if ($row = mysqli_fetch_assoc($result_foto)) {
+$resultado_foto = mysqli_query($con, $sql_foto);
+if ($row = mysqli_fetch_assoc($resultado_foto)) {
     $ruta_foto = $row['fotografia'];
 }
 
